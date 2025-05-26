@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap");
+.cards {
+  display: flex;
+  gap: 50px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.card .card__top {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 450px;
+  height: 243px;
+  color: #4f6376;
+}
+.card .card__top img {
+  width: 180px;
+  height: 243px;
+  border-radius: 3px;
+}
+.card .card__top .card__infos .card__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #95A7B5;
+}
+.card .card__top .card__infos .card__duration {
+  font-size: 20px;
+  font-weight: normal;
+  color: #4f6376;
+}
+.card .card__top .card__infos .card__description {
+  font-size: 12px;
+  font-weight: normal;
+  color: #4f6376;
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.date h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #95A7B5;
+}
+.date img {
+  width: 8px;
+  height: 10px;
+  padding: 5px;
+}
+
+.card__reservations {
+  width: 450px;
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.card__reservations .card__reservation {
+  font-size: 12px;
+  font-weight: normal;
+  color: #95A7B5;
+  padding: 7px 15px;
+  border: 1px solid #4f6376;
+  border-radius: 3px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.moviecard {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  gap: 30px;
+}
+.moviecard img {
+  width: 180px;
+  height: 243px;
+  border-radius: 3px;
+}
+.moviecard .card__reservation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.moviecard .card__reservation h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #95A7B5;
+  margin-bottom: 5px;
+}
+.moviecard .card__reservation .card__reservations {
+  width: 100%;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  padding: 20px;
+}
+aside .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #95A7B5;
+  margin-bottom: 10px;
+}
+aside .checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+aside .checkboxes::-webkit-scrollbar {
+  width: 4px;
+}
+aside .checkboxes::-webkit-scrollbar-thumb {
+  background: #20262a;
+  border-radius: 3px;
+}
+aside .checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+aside .checkboxes label p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #95A7B5;
+}
+aside .checkboxes label input {
+  display: none;
+}
+aside .checkboxes label .checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #95A7B5;
+  border-radius: 3px;
+}
+aside .checkboxes label input:checked ~ .checkbox:after {
+  content: "";
+}
+aside .checkboxes label .checkbox::after {
+  display: block;
+  width: 3px;
+  height: 6px;
+  border-right: 1px solid #95A7B5;
+  border-bottom: 1px solid #95A7B5;
+  margin-left: 4px;
+  margin-top: 1px;
+  transform: rotate(45deg);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Anaheim";
+}
+
+body {
+  background-color: #181C1F;
+}
+
+main {
+  margin-left: 400px;
+  margin-top: 20px;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

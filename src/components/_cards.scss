@@ -1,0 +1,58 @@
+@use '../utilities/variables' as *;
+
+.cards{
+    display: flex;
+    gap: 50px;
+    
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.card{
+
+    .card__top{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        
+        width: 450px;
+        height: 243px;
+
+        color: $main-color;
+
+        img{
+            width: 180px;
+            height: 243px;
+
+            border-radius: 3px;
+        }
+
+        .card__infos{
+
+            .card__title{
+                font-size: 24px;
+                font-weight: bold;
+                color: $text-color;
+            }
+            .card__duration{
+                font-size: 20px;
+                font-weight: normal;
+                color: $main-color;
+            }
+            .card__description{
+                font-size: 12px;
+                font-weight: normal;
+                color: $main-color;
+
+                margin-top: 10px;
+
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                line-clamp: 8;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+}
